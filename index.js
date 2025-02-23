@@ -6,7 +6,7 @@ $(document).ready(function () {
     var idProductChose = 0;
 
     $.ajax({
-        url: 'https://cs420-ajax.vercel.app/',
+        url: 'https://cs420-ajax-bus1n2d6y-bphucs-projects.vercel.app/',
         type: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
             image: imageProductInput.value
         }
         $.ajax({
-            url: 'https://cs420-ajax.vercel.app/create',
+            url: 'https://cs420-ajax-bus1n2d6y-bphucs-projects.vercel.app/create',
             type: 'POST',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
@@ -42,7 +42,7 @@ $(document).ready(function () {
             return
         }
         $.ajax({
-            url: `https://cs420-ajax.vercel.app/delete/${idProductChose}`,
+            url: `https://cs420-ajax-bus1n2d6y-bphucs-projects.vercel.app/delete/${idProductChose}`,
             type: 'POST',
             success: function () {
                 
@@ -63,7 +63,7 @@ $(document).ready(function () {
             image: imageProductInput.value
         }
         $.ajax({
-            url: `https://cs420-ajax.vercel.app/update/${idProductChose}`,
+            url: `https://cs420-ajax-bus1n2d6y-bphucs-projects.vercel.app/update/${idProductChose}`,
             type: 'POST',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
