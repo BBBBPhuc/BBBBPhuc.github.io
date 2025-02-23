@@ -6,7 +6,7 @@ $(document).ready(function () {
     var idProductChose = 0;
 
     $.ajax({
-        url: 'http://127.0.0.1:3000/',
+        url: 'https://cs420-ajax.vercel.app/',
         type: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
             image: imageProductInput.value
         }
         $.ajax({
-            url: 'http://127.0.0.1:3000/create',
+            url: 'https://cs420-ajax.vercel.app/create',
             type: 'POST',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
@@ -42,7 +42,7 @@ $(document).ready(function () {
             return
         }
         $.ajax({
-            url: `http://127.0.0.1:3000/delete/${idProductChose}`,
+            url: `https://cs420-ajax.vercel.app/delete/${idProductChose}`,
             type: 'POST',
             success: function () {
                 
@@ -63,7 +63,7 @@ $(document).ready(function () {
             image: imageProductInput.value
         }
         $.ajax({
-            url: `http://127.0.0.1:3000/update/${idProductChose}`,
+            url: `https://cs420-ajax.vercel.app/update/${idProductChose}`,
             type: 'POST',
             dataType: 'json',
             contentType: "application/json; charset=utf-8",
