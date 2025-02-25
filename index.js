@@ -33,6 +33,7 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(form),
             success: function () {
+                console.log("OK")
                 getData()
             },
             error: function (request, error) {
